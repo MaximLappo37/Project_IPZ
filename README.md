@@ -1,5 +1,5 @@
 # Project_IPZ
-Тема роботи: "Webtraining на react.js"
+Тема роботи: "Webtraining на react.js" <br/>
 Виконали:<br/>
 Лаппо Максим<br/>
 Лазарєв Матвій<br/>
