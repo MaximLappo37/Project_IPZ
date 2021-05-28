@@ -217,3 +217,110 @@ const [score1_his, setScore1_his] = useState(0)
 const [showScore1_his, setShowScore1_his] = useState(false)
 ```
 
+Після проходження всіх 10 питань, в тій же області має висвітитися результат тесту<br/>
+```jsx
+ {
+                    showScore1_his
+                        ? <div className="section_score1_his">
+                             <div>Правильних відповідей {score1_his} з {questions1_his.length}</div>
+                          </div>
+                        : <div className="quizz1_his">
+                            <div className="question_section1_his">
+                                <div className="question_count1_his">
+                                    <span>Питання {currentQuestion1_his + 1} / {questions1_his.length}</span> 
+                                </div>
+                                <div className="question_text1_his">{questions1_his[currentQuestion1_his].qustionText1_his}</div>
+                            </div>
+                            <div className="answer_section1_his">
+                                {questions1_his[currentQuestion1_his].answerOptions1_his.map(item => (
+                                <button
+                                    onClick={() => handleAnswerOptionClick1_his(item.isCorrect)}
+                                >{item.answerText1_his}</button>
+                                )
+                          )}
+
+```
+Для відображення всіх результатів пройдених тестів, створимо таблицю для кожного предмета <br/>
+Тому, перейдемо у вкладку «Результати тестування». Спочатку створимо у файлі  `results.js` функцію `results` <br/>
+```jsx
+export default class results extends Component {
+    render() {
+        return (
+        )
+    }
+}
+``` 
+Далі створимо файли: `res_bio.js`; ` res_math.js `; ` res_phy.js `; ` res_ukr.js `; ` res_his.js `; ` res_geo.js ` <br/>
+Як приклад виберемо файл ` res_geo.js `. Створимо функцію <br/>
+```jsx
+const His = () => {
+    return (
+ 	)
+}
+export default His;
+```
+Створимо в цій функції таблицю <br/>
+```jsx
+<Table striped bordered hover variant="dark" size="sm" className='tbl_geo'>
+            <thead>
+                <tr>
+                <th>Номер тесту</th>
+                <th>Максимальний бал</th>
+                <th>Балів отримано</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>1</td>
+                <td>10</td>
+                <td></td>
+                </tr>
+                <tr>
+                <td>2</td>
+                <td>10</td>
+                <td></td>
+                </tr>
+                <tr>
+                <td>3</td>
+                <td >10</td>
+                <td></td>
+                </tr>
+                <tr>
+                <td>4</td>
+                <td >10</td>
+                <td></td>
+                </tr>
+                <tr>
+                <td>5</td>
+                <td >10</td>
+                <td></td>
+                </tr>
+                <tr>
+                <td>6</td>
+                <td >10</td>
+                <td></td>
+                </tr>
+                <tr>
+                <td>7</td>
+                <td >10</td>
+                <td></td>
+                </tr>
+                <tr>
+                <td>8</td>
+                <td >10</td>
+                <td></td>
+                </tr>
+                <tr>
+                <td>9</td>
+                <td >10</td>
+                <td></td>
+                </tr>
+                <tr>
+                <td>10</td>
+                <td >10</td>
+                <td></td>
+                </tr>
+            </tbody>
+        </Table>
+
+```
