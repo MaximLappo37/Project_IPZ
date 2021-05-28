@@ -204,7 +204,7 @@ const questions1_his = [
 const [currentQuestion1_his, setCurrentQuestion1_his] = useState(0)
 
 ```
-* кількість балів
+* Кількість балів
 
 
 ```jsx
