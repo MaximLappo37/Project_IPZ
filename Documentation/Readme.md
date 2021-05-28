@@ -36,7 +36,10 @@ ReactDOM.render(
 ## Components
 Містить файл `Header.js`, в якому знаходиться функціонал нашого сайту.
 
-# ***_Variants
+# Pages
+Папка, в якій містяться файли з наповненням сторінок сайту.(`Home.js`,`About.js`,`Contacts.js`,`georgaphy.js`,`math.js`,`biology.js`,`ukranian.js`,`phisics.js`,`history.js`)
 
+# ***Variants
+Папки, в яких знаходяться тести відповідно до заданого варіанту.
 
 
