@@ -1,0 +1,62 @@
+.Main{
+    margin-top: -150px;
+    background: rgb(145, 192, 156);
+    height: 1280px;
+}
+.Ava1{
+justify-content: center;
+align-items: center;
+background: black;
+border-radius: 15px;
+width: 210px;
+height: 210px;
+margin-left: 200px;
+margin-top: -1200px;
+}
+.KAve1{
+justify-content: center;
+align-items: center;
+background: rgb(238, 237, 198);
+width: 800px;
+height: 200px;
+margin-left: 300px;
+margin-top: 150px;
+}
+.KAve2{
+    justify-content: center;
+    align-items: center;
+    background: rgb(238, 237, 198);
+    width: 800px;
+    height: 200px;
+    margin-left: 0px;
+    margin-top: 200px;
+}
+.Ava2{
+    justify-content: center;
+    align-items: center;
+    background: black;
+    border-radius: 15px;
+    width: 210px;
+    height: 210px;
+    margin-left: 900px;
+    margin-top: -30px;
+}
+.Ava3{
+justify-content: center;
+align-items: center;
+background: black;
+border-radius: 15px;
+width: 210px;
+height: 210px;
+margin-left: 0px;
+margin-top: 200px;
+}
+.KAve3{
+justify-content: center;
+align-items: center;
+background: rgb(238, 237, 198);
+width: 800px;
+height: 200px;
+margin-left: 300px;
+margin-top: 200px;
+}
