@@ -130,4 +130,90 @@ const { loginWithRedirect,logout, isAuthenticated } = useAuth0();
 Маємо загальний вигляд нашої головної сторінки:<br/>
 ![я1](https://user-images.githubusercontent.com/47575620/119914270-7a0b5880-bf68-11eb-8ea1-7c32b2844c8b.png)
 
+Перейдемо до створення тестів. Для кожного предмета сама функція буде однакова, тому опишемо її через один предмет - Історія. Почнемо для створення панелі для вибору тесту. Всього тестів буде 10, по 10 питань.<br/>
+```jsx
+<Tab.Container >
+                    <Row>
+                        <Col sm={3}>
+                            <Nav variant="pills" className="flex-column">
+                                <Nav.Item>
+                                    <Nav.Link eventKey="first_geo">Тест 1 </Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link eventKey="second_geo">Тест 2</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link eventKey="third_geo">Тест 3</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link eventKey="four_geo">Тест 4</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link eventKey="five_geo" >Тест 5</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link eventKey="six_geo">Тест 6</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link eventKey="seven_geo">Тест 7</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link eventKey="eight_geo">Тест 8</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link eventKey="nine_geo">Тест 9</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link eventKey="ten_geo">Тест 10</Nav.Link>
+                                </Nav.Item>
+                            </Nav>
+                        </Col>
+                        
+                    </Row>
+                </Tab.Container>
+
+```
+Кожен тест складається з лічильника питань, самих питань і 4 кнопок з варіантами відповідей<br/>
+Створимо функцію для першого тесту: <br/>
+```jsx
+function Variant1_his(){
+	return(
+	)
+}
+export default Variant1_his
+```
+Далі додамо в якості констант:<br/>
+* 10 питань з варіантами відповідей<br/>
+
+```jsx
+const questions1_his = [
+        {
+            qustionText1_his: 'Період Нового царства в історії Давнього Єгипту завершився',
+            answerOptions1_his: [
+                {answerText1_his: 'ХVІІ ст. до н. е.', isCorrect: false},
+                {answerText1_his: 'ХV ст. до н. е.', isCorrect: false},
+                {answerText1_his: 'ХIІІ ст. до н. е.', isCorrect: false},
+                {answerText1_his: 'ХІ ст. до н. е.', isCorrect: true}
+            ]
+        },
+```
+* Лічильник кількості питань<br/>
+
+
+```jsx
+const [currentQuestion1_his, setCurrentQuestion1_his] = useState(0)
+
+```
+* кількість балів
+
+
+```jsx
+const [score1_his, setScore1_his] = useState(0)
+```
+* Показ отриманих балів
+
+
+```jsx
+const [showScore1_his, setShowScore1_his] = useState(false)
+```
 
