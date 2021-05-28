@@ -324,3 +324,9 @@ export default His;
         </Table>
 
 ```
+
+![я2](https://user-images.githubusercontent.com/47575620/119918357-f30eae00-bf70-11eb-8344-18762c362fb9.png)
+
+![я3](https://user-images.githubusercontent.com/47575620/119918375-fbff7f80-bf70-11eb-97d0-3771bc2a4612.png)
+
+
