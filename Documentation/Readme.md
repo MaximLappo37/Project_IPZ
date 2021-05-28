@@ -46,3 +46,86 @@ ReactDOM.render(
 Папки, в яких знаходяться тести по предметам.(географія,математика,біологія,українська мова,історія,фізика)
 
 
+# Створюємо сайт
+Перейдемо на головний файл `App.js`.  Там створимо зовнішній вигляд сайту. Сайт буде складатися с навігаційного меню, кнопок для входу на свою обліковий запис, кнопок для переходу до тестування для кожного предмета: георафія, історія, українська мова, фізика, біологія, математика.<br/>
+``` jsx
+const App = () => {
+    return (
+        <Header/>
+    );
+};
+
+export default App;
+```
+Далі перейдемо до панелі-меню `Header.js`. Створимо функцію:<br/>
+``` jsx
+const Header = () => {
+	return (
+	)
+}
+export default Header;
+
+```
+Далі створюємо в файлі `Header.js` панель-меню - головна сторінка, Про нас, контакти и результати тестування, за допомогою Bootstrap. Bootstrap - це фронтенд розробка сайтів та інтерфейсів адмінок. Фреймворк Bootstrap є Найпопулярнішим. Він дозволяє верстати сайти в кілька разів швидше, ніж на «чистому» CSS і JavaScript. Також надає можливість створювати досить якісні макети.<br/>
+``` jsx
+import { Container, Nav, Navbar} from 'react-bootstrap';
+```
+Маємо:<br/>
+``` jsx
+<Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
+               <Container>
+                   <Navbar.Brand href="/">
+                        <img
+                            src={logo}
+                            height="60"
+                            width="60"
+                            className="d-inline-block align-top"
+                            alt="Logo"
+                            style={{'borderRadius':'100%'}}
+                        /> 
+                   </Navbar.Brand>
+                   <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+                   <Navbar.Collapse id="responsive-navbar-nav">
+                       <Nav className="mr-auto">
+                           <Nav.Link href="/"> Головна сторінка </Nav.Link>
+                           <Nav.Link href="/about"> Про нас </Nav.Link>
+                           <Nav.Link href="/contacts"> Контакти </Nav.Link>
+                           <Nav.Link href="/results">Результати тестування</Nav.Link>
+                           
+                       </Nav>
+
+```
+Також по правій стороні створимо кнопку Увійти (Вийти), щоб зайти в обліковий запис і вийти з неї, с помощью платформи Auth0.  Auth0 - це інструмент аутентифікації як сервісу, який спрощує реалізацію функцій, пов'язаних з перевіркою достовірності для вашого застосування або сайту.
+Тому, створимо константи ` loginWithRedirect,logout, isAuthenticated `<br/>
+``` jsx
+const { loginWithRedirect,logout, isAuthenticated } = useAuth0();
+``` 
+Де:<br/>
+*	loginWithRedirect – функція для входу в обліковий запис
+* logout - функція для виходу з облікового запису
+* isAuthenticated  - функція для перевірки, якщо користувач зайшов в свій акаунт, то відображається на головній сторінці його аватарка і невелика інформація про нього. Якщо користувач не зайшов, то відображається в рамці текст «Спочатку зайдіть в акаунт!»
+
+
+``` jsx
+{ isAuthenticated  ?
+                     <div>
+                        <body className='bg2_info1'>
+                            <img className='pict_avatar' src={user.picture} alt={user.name} />
+                            <h3 className='info'>Ім`я: {user.given_name}</h3>
+                            <h3 className='info'>Прізвище: {user.family_name}</h3>
+                            <h3 className='info'>Пошта: {user.email}</h3>
+                            <h3 className='info'>Нікнейм: {user.nickname}</h3>
+                        </body>
+                    </div>
+                    :
+                    <div>
+                        <body className='bg2_info2'>
+                            <h1 className='info1_1'>Спочатку зайдіть</h1>
+                            <h1 className='info1_2'>в акаунт!</h1>
+                        </body>
+                    </div>
+                }
+
+```
+Маємо загальний вигляд нашої головній сторінці:<br/>
+
