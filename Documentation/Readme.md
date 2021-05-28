@@ -327,7 +327,9 @@ export default His;
 ![я55](https://user-images.githubusercontent.com/47575620/119918508-4a148300-bf71-11eb-9840-c990d62c8248.png)
 ![я551](https://user-images.githubusercontent.com/47575620/119918524-4ed93700-bf71-11eb-8506-3d31b6968961.png)
 ![я'1](https://user-images.githubusercontent.com/47575620/119918532-513b9100-bf71-11eb-9883-4ca92f03b2c9.png)
+![Uploading я2.png…]()
 ![я3](https://user-images.githubusercontent.com/47575620/119918558-5993cc00-bf71-11eb-8fd6-e01b77413347.png)
+![я4](https://user-images.githubusercontent.com/47575620/119918656-8c3dc480-bf71-11eb-879d-b9bb88af655b.png)
 
 
 
