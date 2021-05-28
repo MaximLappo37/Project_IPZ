@@ -26,7 +26,7 @@
 
 **ДІАГРАМА**:
 
-https://inlnk.ru/r9JOV
+![uml](https://inlnk.ru/r9JOV)
 
 
 ### 2. Сценарій авторизації користувача
@@ -51,7 +51,7 @@ https://inlnk.ru/r9JOV
 
 **ДІАГРАМА:**
 
-https://inlnk.ru/bBVOd
+![uml](https://inlnk.ru/bBVOd)
 
 ### 3. Сценарій результатів тестування
    
@@ -71,7 +71,7 @@ https://inlnk.ru/bBVOd
 
 **ДІАГРАМА**:
 
-https://inlnk.ru/bQ14g
+![uml](https://inlnk.ru/bQ14g)
 
 ### 4. Сценарій зворотнього зв'язку
 
@@ -94,4 +94,4 @@ https://inlnk.ru/bQ14g
 
 **ДІАГРАМА:**
 
-https://inlnk.ru/WoM4a
+![uml](https://inlnk.ru/WoM4a)
