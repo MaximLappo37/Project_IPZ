@@ -1,4 +1,4 @@
-.g_bg1{
+.g_bg4{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,7 @@
     width: 100%;
 
 }
-.variant1_geo{
+.variant4_geo{
     background: #252d4a;
     width: 1000px;
     min-height: 400px;
@@ -16,27 +16,27 @@
     display: flex;
     box-shadow:10px 10px 42px 0px rgba(0, 0 , 0, 0.75);
 }
-.quizz1_geo{
+.quizz4_geo{
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
-.question_section1_geo{
+.question_section4_geo{
     flex: 0 0 65%;
 }
-.question_count1_geo{
+.question_count4_geo{
     margin-bottom: 20px;
     color: #fff;
 }
-.question_count1_geo span{
+.question_count4_geo span{
     font-size: 28px;
 }
-.question_text1_geo{
+.question_text4_geo{
     font-size: 25px;
     margin-bottom: 15px;
     color: #fff;
 }
-.answer_section1_geo{
+.answer_section4_geo{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -60,7 +60,7 @@ button:hover{
     background: #234668;
     transition: all 0.3 ease;
 }
-.section_score1_geo{
+.section_score4_geo{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,6 +69,6 @@ button:hover{
     color: #fff;
     width: 100%;
 }
-.end_test1_geo{
+.end_test4_geo{
     margin-top: 25px;
 }
