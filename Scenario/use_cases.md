@@ -1,2 +1,2 @@
 
-![uml](https://inlnk.ru/WXV70)
+![uml](https://inlnk.ru/rPD7E)
