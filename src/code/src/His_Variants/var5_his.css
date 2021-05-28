@@ -1,4 +1,4 @@
-.h_bg4{
+.h_bg5{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,7 @@
     width: 100%;
 
 }
-.variant4_his{
+.variant5_his{
     background: #252d4a;
     width: 1000px;
     min-height: 400px;
@@ -16,27 +16,27 @@
     display: flex;
     box-shadow:10px 10px 42px 0px rgba(0, 0 , 0, 0.75);
 }
-.quizz4_his{
+.quizz5_his{
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
-.question_section4_his{
+.question_section5_his{
     flex: 0 0 65%;
 }
-.question_count4_his{
+.question_count5_his{
     margin-bottom: 20px;
     color: #fff;
 }
-.question_count4_his span{
+.question_count5_his span{
     font-size: 28px;
 }
-.question_text4_his{
+.question_text5_his{
     font-size: 25px;
     margin-bottom: 15px;
     color: #fff;
 }
-.answer_section4_his{
+.answer_section5_his{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -60,7 +60,7 @@ button:hover{
     background: #234668;
     transition: all 0.3 ease;
 }
-.section_score4_his{
+.section_score5_his{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,6 +69,6 @@ button:hover{
     color: #fff;
     width: 100%;
 }
-.end_test4_his{
+.end_test5_his{
     margin-top: 25px;
 }
