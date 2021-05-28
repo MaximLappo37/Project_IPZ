@@ -128,4 +128,6 @@ const { loginWithRedirect,logout, isAuthenticated } = useAuth0();
 
 ```
 Маємо загальний вигляд нашої головній сторінці:<br/>
+![я1](https://user-images.githubusercontent.com/47575620/119914270-7a0b5880-bf68-11eb-8ea1-7c32b2844c8b.png)
+
 
